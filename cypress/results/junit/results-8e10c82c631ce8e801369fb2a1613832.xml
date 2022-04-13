@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="25.1770" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-04-13T21:00:37" tests="0" file="cypress/integration/tests/myWeek.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Most crucial tests on My Week page" timestamp="2022-04-13T21:00:37" tests="4" time="25.1520" failures="1">
+    <testcase name="Most crucial tests on My Week page should fail if SETS number is only visible on exercise page" time="7.8100" classname="should fail if SETS number is only visible on exercise page">
+    </testcase>
+    <testcase name="Most crucial tests on My Week page should have same the SETS number on both previous video and video page" time="5.0360" classname="should have same the SETS number on both previous video and video page">
+    </testcase>
+    <testcase name="Most crucial tests on My Week page should start training and complete by checking active exercise number, and logout" time="4.0390" classname="should start training and complete by checking active exercise number, and logout">
+    </testcase>
+    <testcase name="Most crucial tests on My Week page should add step and check the weekly&amp;daily total step, and SYNC" time="0.0000" classname="should add step and check the weekly&amp;daily total step, and SYNC">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.table__cell_highlighted &gt; .steps`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.table__cell_highlighted > .steps`, but never found it.
+    at Context.eval (https://app.caspar-health.com/__cypress/tests?p=cypress\integration\tests\myWeek.spec.js:535:12)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

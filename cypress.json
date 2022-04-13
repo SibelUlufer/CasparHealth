@@ -1,0 +1,20 @@
+{
+    "ignoreTestFiles": [
+        ".js*",
+        "*.md"
+      ],
+    "watchForFileChanges": false,
+    "chromeWebSecurity": false,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "hideXHR": true,
+    "baseUrl": "https://app.caspar-health.com/en",
+    "env":{
+        "id":"ZQG5610",
+        "password":"TestCaspar1234"
+    },
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporter-config.json"
+    }
+}

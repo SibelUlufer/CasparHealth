@@ -1,0 +1,168 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-04-13T21:00:37.373Z",
+    "end": "2022-04-13T21:01:02.550Z",
+    "duration": 25177,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "58d73f05-0104-4b16-ac50-1f37ac678ceb",
+      "title": "",
+      "fullFile": "cypress/integration/tests/myWeek.spec.js",
+      "file": "cypress/integration/tests/myWeek.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0faaeb5b-5a93-4bf8-a12d-29945a1ec203",
+          "title": "Most crucial tests on My Week page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should fail if SETS number is only visible on exercise page",
+              "fullTitle": "Most crucial tests on My Week page should fail if SETS number is only visible on exercise page",
+              "timedOut": null,
+              "duration": 7810,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_exercisePage.default.testFailSetCount(); //occurs only in specific video, therefore I seperated this test to show it",
+              "err": {},
+              "uuid": "24c94f34-4878-49ae-a77a-7ad69ce11282",
+              "parentUUID": "0faaeb5b-5a93-4bf8-a12d-29945a1ec203",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should have same the SETS number on both previous video and video page",
+              "fullTitle": "Most crucial tests on My Week page should have same the SETS number on both previous video and video page",
+              "timedOut": null,
+              "duration": 5036,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_exercisePage.default.testSuccessfulSetCount(); //occurs only in specific video, therefore I seperated this test to show it",
+              "err": {},
+              "uuid": "88f62cc7-5e74-42ce-b7cd-3632e05de8ee",
+              "parentUUID": "0faaeb5b-5a93-4bf8-a12d-29945a1ec203",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should start training and complete by checking active exercise number, and logout",
+              "fullTitle": "Most crucial tests on My Week page should start training and complete by checking active exercise number, and logout",
+              "timedOut": null,
+              "duration": 4039,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_exercisePage.default.goToExercise();\n_basePage.default.logOut();",
+              "err": {},
+              "uuid": "5f484943-960a-4a6e-90d2-c94ffb08b7c8",
+              "parentUUID": "0faaeb5b-5a93-4bf8-a12d-29945a1ec203",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should add step and check the weekly&daily total step, and SYNC",
+              "fullTitle": "Most crucial tests on My Week page should add step and check the weekly&daily total step, and SYNC",
+              "timedOut": null,
+              "duration": 8165,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_stepPage.default.goToSteps();\n_stepPage.default.assertDailyStep();\n_stepPage.default.assertWeeklyStep();\n_stepPage.default.clickSync();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.table__cell_highlighted > .steps`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.table__cell_highlighted > .steps`, but never found it.\n    at Context.eval (https://app.caspar-health.com/__cypress/tests?p=cypress\\integration\\tests\\myWeek.spec.js:535:12)",
+                "diff": null
+              },
+              "uuid": "832c03b3-51dc-4956-9960-76519af87eae",
+              "parentUUID": "0faaeb5b-5a93-4bf8-a12d-29945a1ec203",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "24c94f34-4878-49ae-a77a-7ad69ce11282",
+            "88f62cc7-5e74-42ce-b7cd-3632e05de8ee",
+            "5f484943-960a-4a6e-90d2-c94ffb08b7c8"
+          ],
+          "failures": [
+            "832c03b3-51dc-4956-9960-76519af87eae"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 25050,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

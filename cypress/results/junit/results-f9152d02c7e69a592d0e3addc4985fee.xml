@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="18.7700" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-04-13T21:01:07" tests="0" file="cypress/integration/tests/today.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Most crucial tests on today page" timestamp="2022-04-13T21:01:07" tests="2" time="18.7560" failures="1">
+    <testcase name="Most crucial tests on today page should start training and complete by checking repetition number, and logout" time="0.0000" classname="should start training and complete by checking repetition number, and logout">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `[data-cy=&quot;start-training-button&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy="start-training-button"]`, but never found it.
+    at Context.eval (https://app.caspar-health.com/__cypress/tests?p=cypress\support\index.js:142:6)]]></failure>
+    </testcase>
+    <testcase name="Most crucial tests on today page should add step and check the total step, and SYNC" time="9.0520" classname="should add step and check the total step, and SYNC">
+    </testcase>
+  </testsuite>
+</testsuites>
