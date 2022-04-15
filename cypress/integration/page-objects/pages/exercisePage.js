@@ -184,11 +184,15 @@ class exercisePage{
     static checkActiveVideoNumber(){
         cy.get('app-video-preview').then( videos =>{
             cy.wrap(videos).its('length').then(allVideos=>{//finds all videos
-                cy.wrap(videos).find('mat-icon').its('length').then( completedVideos=>{//finds completed videos
-                    let activeVideos = allVideos - completedVideos//finds active videos
-                    cy.log(activeVideos).as('activeVideos')
-                    cy.wrap(activeVideos).should('eq', Cypress.env('activeVideoNumber'))//will check the active video numbers are equal
-                })
+                if(videos.find('mat-icon').is(':visible')){
+                    cy.wrap(videos).find('mat-icon').its('length').then( completedVideos=>{//finds completed videos
+                        let activeVideos = allVideos - completedVideos//finds active videos
+                        cy.log(activeVideos).as('activeVideos')
+                        cy.wrap(activeVideos).should('eq', Cypress.env('activeVideoNumber'))//will check the active video numbers are equal
+                    })
+                }else{
+                     cy.log('All videos are available!')
+                }
             })
         })
     }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="154.2830" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-04-15T13:19:30" tests="0" file="cypress/integration/tests/today.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Most crucial tests on today page" timestamp="2022-04-15T13:19:30" tests="2" time="154.2690" failures="0">
+    <testcase name="Most crucial tests on today page should start training and complete by checking repetition number, and logout" time="143.2770" classname="should start training and complete by checking repetition number, and logout">
+    </testcase>
+    <testcase name="Most crucial tests on today page should add step and check the total step, and SYNC" time="10.8820" classname="should add step and check the total step, and SYNC">
+    </testcase>
+  </testsuite>
+</testsuites>
