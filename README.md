@@ -60,10 +60,4 @@ $ npm i
 
 - Video keywords does not display properly
 - In some videos, sets numbers works unstable
-#� �C�a�s�p�a�r�H�e�a�l�t�h�
-�
-�#� �C�a�s�p�a�r�T�a�s�k�
-�
-�#� �C�a�s�p�a�r�H�e�a�l�t�h�
-�
-�
+
